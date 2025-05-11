@@ -42,11 +42,12 @@ A lightweight Chrome extension that automatically adds a **"Copy" button** to al
 ---
 
 ```shell
-copy-code-extension/
+01-copy/
 ├── manifest.json
 ├── content.js
 ├── style.css
 ├── icon.png
+├── preview.png
 └── README.md
 ```
 
