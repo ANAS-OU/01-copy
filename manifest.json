@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Copy Code Button",
+  "version": "1.0",
+  "description": "Adds a copy button to all <code> blocks.",
+  "permissions": ["scripting"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {
+    "48": "icon.png"
+  }
+}
