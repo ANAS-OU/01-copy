@@ -3,11 +3,20 @@
   "name": "Copy Code Button",
   "version": "1.0",
   "description": "Adds a copy button to all <code> blocks.",
-  "permissions": ["scripting"],
+  "permissions": [
+    "scripting"
+  ],
   "content_scripts": [
     {
-      "matches": ["<all_urls>"],
-      "js": ["content.js"]
+      "matches": [
+        "https://learn.zone01oujda.ma/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "css": [
+        "style.css"
+      ]
     }
   ],
   "icons": {
