@@ -21,7 +21,7 @@ A lightweight Chrome extension that automatically adds a **"Copy" button** to al
 1. Clone or download this repo:
 
     ```bash
-    git clone https://github.com/your-username/copy-code-extension.git
+    git clone https://github.com/anas-ou/01-copy.git
     ```
 
 2. Open Chrome, and navigate to:
