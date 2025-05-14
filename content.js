@@ -1,6 +1,6 @@
 function addCopyButtons() {
     setTimeout(() => {
-        document.querySelectorAll("pre>code").forEach((codeBlock) => {
+        document.querySelectorAll(`code[class*="block-01"]`).forEach((codeBlock) => {
             if (codeBlock.parentElement?.classList?.contains("copy-wrapper")) return;
 
             const wrapper = document.createElement("div");
