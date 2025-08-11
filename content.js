@@ -1,11 +1,9 @@
 function addCopyButtons() {
     setTimeout(() => {
         document.querySelectorAll(`code[class*="block-01"]`).forEach((codeBlock) => {
-            if (codeBlock.parentElement?.classList?.contains("copy-wrapper")) return;
+            if (codeBlock.classList?.contains("copy-wrapper")) return;
 
-            const wrapper = document.createElement("div");
-            wrapper.className = "copy-wrapper";
-            wrapper.style.position = "relative";
+            codeBlock.classList.add('copy-wrapper');
 
             const copyBtn = document.createElement("button");
             copyBtn.innerText = "Copy";
@@ -18,10 +16,7 @@ function addCopyButtons() {
                 });
             });
 
-            const parent = codeBlock.parentElement;
-            parent.replaceChild(wrapper, codeBlock);
-            wrapper.appendChild(codeBlock);
-            wrapper.appendChild(copyBtn);
+            codeBlock.appendChild(copyBtn);
         });
     }, 500);
 }

@@ -15,11 +15,11 @@
         "content.js"
       ],
       "css": [
-        "style.css"
+        "assets/css/style.css"
       ]
     }
   ],
   "icons": {
-    "48": "icon.png"
+    "48": "assets/img/icon.png"
   }
 }
