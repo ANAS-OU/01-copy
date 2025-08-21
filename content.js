@@ -9,7 +9,9 @@ function addCopyButtonToBlock(codeBlock) {
     copyBtn.innerText = "Copy";
     copyBtn.className = "copy-button";
     copyBtn.addEventListener("click", () => {
-        navigator.clipboard.writeText(codeBlock.innerText).then(() => {
+        const newCodeBlock = codeBlock.cloneNode(true);
+        newCodeBlock.querySelector('.copy-button')?.remove();
+        navigator.clipboard.writeText(newCodeBlock.innerText).then(() => {
             copyBtn.innerText = "Copied!";
             setTimeout(() => (copyBtn.innerText = "Copy"), 1500);
         });
